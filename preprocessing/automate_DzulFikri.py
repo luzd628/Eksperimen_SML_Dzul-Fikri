@@ -3,7 +3,7 @@ import numpy as np
 from sklearn.preprocessing import StandardScaler
 
 # Muat Dataset
-df = pd.read_csv('./loan_data.csv')
+df = pd.read_csv('./loan_data_raw.csv')
 
 # Kolom Numerikal
 numerical_column = ['person_age', 'person_income', 'person_emp_exp', 'loan_amnt',
