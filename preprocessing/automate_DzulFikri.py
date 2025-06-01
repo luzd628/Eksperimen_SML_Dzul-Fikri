@@ -16,7 +16,7 @@ df.drop_duplicates(inplace=True)
 # Atasi Outlier
 Q1 = df[numerical_column].quantile(0.25)
 Q3 = df[numerical_column].quantile(0.75) 
-IQR = Q3 - Q1
+IQR = Q3 - Q1 
 
 df = df[~((df[numerical_column] < (Q1-1.5*IQR)) | (df[numerical_column] > (Q3+1.5*IQR))).any(axis=1)]
 
