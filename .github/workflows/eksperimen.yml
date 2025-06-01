@@ -28,7 +28,7 @@ jobs:
         
     - name: Running Preprocessing
       run: python preprocessing/automate_DzulFikri.py
-    
+      
     - name: Commit & Push into
       run: | 
         git config --global user.name "${{ secrets.USERNAME_GIT }}"
